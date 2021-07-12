@@ -7,7 +7,7 @@ This repository is a fork of Maven Surefire that contains two main modifications
 
 ## Setup
 
-To use the plugin, please ensure you are on the `test-method-sorting` branch and then perform the following steps.
+To use the plugin, please perform the following steps.
 
 1. Run ```mvn install -DskipTests -Drat.skip``` in this directory
 2. Copy ```surefire-changing-maven-extension/target/surefire-changing-maven-extension-1.0-SNAPSHOT.jar``` into your Maven installation's ```lib/ext``` directory. This [StackOverflow post](https://stackoverflow.com/a/39479104) may help indicate where your Maven installation is located
