@@ -270,6 +270,10 @@ public class KPLifecycleParticipant extends AbstractMavenLifecycleParticipant {
 		if (parallel != null)
 			parallel.setValue("none");
 
+		Xpp3Dom runOrder = config.getChild("runOrder");
+		if (runOrder != null)
+		    runOrder.setValue(""); // while the extension is active, all pom.xml runOrder settings will be cleared so that the only way to set runOrder is on the command line
+		
 		fixForkMode(config, FORK_PER_TEST);
 
 
